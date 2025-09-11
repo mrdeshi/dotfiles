@@ -1,117 +1,76 @@
 {
+    // General Settings
     "layer": "top",
-    "position": "top",
-    "height": 24,
-    "spacing": 5,
-    "modules-left": [
-        "hyprland/workspaces",
-        "custom/platform-profile",
-        "temperature"
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 0,
+    // Load Modules
+    "include": [
+        "~/.config/waybar/modules.json"
     ],
-    "modules-center": [
-        "clock"
-    ],
-    "modules-right": [
-        "wireplumber",
-        "battery",
-        "hyprland/language",
-        "idle_inhibitor",
-        "network",
-        "bluetooth",
-        "tray"
-    ],
-    "hyprland/workspaces": {
-        "format": "<span size='larger'>{icon}</span>",
-        "on-click": "activate",
-        "format-icons": {
-            "active": "\uf444",
-            "default": "\uf4c3"
-        },
-        "icon-size": 10,
-        "sort-by-number": true,
-        "persistent-workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-        }
-    },
-    "clock": {
-        "format": "{:%d.%m.%Y | %H:%M}"
-    },
-    "wireplumber": {
-        "format": "\udb81\udd7e  {volume}%",
-        "max-volume": 100,
-        "scroll-step": 5
-    },
-    "battery": {
-        "bat": "BAT1",
-        "interval": 60,
-        "format": "{icon}  {capacity}%",
-        "format-icons": [
-            "\uf244",
-            "\uf243",
-            "\uf242",
-            "\uf241",
-            "\uf240"
-        ],
-    },
-    "memory": {
-        "interval": 30,
-        "format": "\uf4bc  {used:0.1f}G"
-    },
-    "temperature": {
-        "format": "{temperatureC}°C"
-    },
-    "network": {
-        "format": "",
-        "format-ethernet": "\udb83\udc9d",
-        "format-wifi": "{icon}",
-        "format-disconnected": "\udb83\udc9c",
-        "format-icons": [
-            "\udb82\udd2f",
-            "\udb82\udd1f",
-            "\udb82\udd22",
-            "\udb82\udd25",
-            "\udb82\udd28"
-        ],
-        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
-        "tooltip-format-ethernet": "{ifname}",
-        "tooltip-format-disconnected": "Disconnected",
-    },
-    "bluetooth": {
-        "format": "\udb80\udcaf",
-        "format-disabled": "\udb80\udcb2",
-        "format-connected": "\udb80\udcb1",
-        "tooltip-format": "{controller_alias}\t{controller_address}",
-        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
-    },
-    "hyprland/language": {
-        "format": "{short}"
-    },
-    "tray": {
-        "icon-size": 16,
-        "spacing": 16
-    },
-    "custom/platform-profile": {
-        "format": "{icon} ",
-        "exec": "~/.config/waybar/platform_profile.sh",
+    // Updates Count
+    "custom/updates": {
+        "format": "   {}",
+        "escape": true,
         "return-type": "json",
-        "restart-interval": 1,
-        "format-icons": {
-            "quiet": "\udb80\udf2a",
-            "balanced": "\udb80\ude10",
-            "performance": "\uf427",
-            "default": "?"
-        },
+        "exec": "~/.config/ml4w/scripts/updates.sh",
+        "restart-interval": 60,
+        "on-click": "$(cat ~/.config/ml4w/settings/terminal.sh) --class dotfiles-floating -e ~/.config/ml4w/scripts/installupdates.sh",
+        "on-click-right": "~/.config/ml4w/settings/software.sh"
     },
-    "idle_inhibitor": {
-        "format": "{icon}",
+    // Pulseaudio
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon}   {volume}%",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
         "format-icons": {
-            "activated": "\udb80\udd76",
-            "deactivated": "\udb83\udfaa"
-        }
-    }
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": [
+                " ",
+                " ",
+                " "
+            ]
+        },
+        "on-click": "pavucontrol"
+    },
+    // Modules Left
+    "modules-left": [
+        "custom/appmenuicon",
+        "hyprland/workspaces",
+        "group/links",
+        "group/quicklinks",
+        "custom/empty"
+    ],
+    // Modules Center
+    "modules-center": [
+        "hyprland/window",
+        "custom/empty"
+    ],
+    // Modules Right    
+    "modules-right": [
+        "custom/updates",
+        "pulseaudio",
+        //"backlight",
+        "bluetooth",
+        "network",
+        "battery",
+        "power-profiles-daemon",
+        "group/hardware",
+        "group/tools",
+        "custom/exit",
+        "clock",
+        "tray",
+        "custom/notification",
+        "custom/ml4w-welcome"
+    ]
 }
