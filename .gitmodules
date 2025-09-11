@@ -1,0 +1,4 @@
+[submodule ".config/waybar"]
+	path = .config/waybar
+	url = https://github.com/sejjy/mechabar.git
+	branch = var/pacman
