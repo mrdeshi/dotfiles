@@ -26,4 +26,6 @@ else
     echo "Start Hyprland with command Hyprland"
 fi
 
-alias gay='echo gay'
+
+
+
