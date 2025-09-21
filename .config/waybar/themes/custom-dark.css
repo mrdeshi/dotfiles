@@ -1,0 +1,79 @@
+/* custom-dark */
+
+/*
+    br - border
+    bg - background
+    fg - foreground
+*/
+
+@define-color rosewater #f4dbd6;
+@define-color flamingo #f0c6c6;
+@define-color pink #f5bde6;
+@define-color mauve #c6a0f6;
+@define-color red #ed8796;
+@define-color maroon #ee99a0;
+@define-color peach #f5a97f;
+@define-color yellow #eed49f;
+@define-color green #a6da95;
+@define-color teal #8bd5cb;
+@define-color sky #91d7e3;
+@define-color sapphire #7dc4e4;
+@define-color blue #8aadf4;
+@define-color lavender #b7bdf8;
+@define-color text #cad3f5;
+@define-color subtext1 #b8c0e0;
+@define-color subtext0 #a5adcb;
+@define-color overlay2 #939ab7;
+@define-color overlay1 #8087a2;
+@define-color overlay0 #6e738d;
+@define-color surface2 #5b6078;
+@define-color surface1 #494d64;
+@define-color surface0 #363a4f;
+@define-color base #24273a;
+@define-color mantle #1e2030;
+@define-color crust #181926;
+
+/* main colors */
+
+@define-color main-br #6272a4;
+/* Desaturated blue border (kept as it complements cyan well) */
+@define-color main-bg #11111b;
+/* Very dark background */
+@define-color main-fg #f8f8f2;
+/* Light gray foreground */
+@define-color accent @yellow;
+/* pacman */
+@define-color hover-bg #1f1f28;
+/* Slightly lighter hover background */
+@define-color hover-fg #f8f8f2;
+/* Light gray hover foreground */
+@define-color outline #0c0c11;
+/* Even darker outline */
+
+/* module colors */
+
+@define-color workspaces #181825;
+@define-color temperature #181825;
+@define-color memory #1f1f28;
+@define-color cpu #282a36;
+@define-color time #282a36;
+@define-color date #1f1f28;
+@define-color tray #181825;
+@define-color volume #181825;
+@define-color backlight #1f1f28;
+@define-color battery #282a36;
+
+/* state colors */
+
+@define-color warning #ffb86c;
+/* Orange warning (kept as a distinct alert color) */
+@define-color critical #ff5555;
+/* Red critical (kept as a distinct alert color) */
+@define-color charging #50fa7b;
+/* Green charging (kept as a distinct alert color) */
+
+/* Ghost Gang */
+@define-color speedy @peach;
+@define-color bashful @peach;
+/* left ghost */
+@define-color pokey @peach;
