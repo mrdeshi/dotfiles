@@ -27,6 +27,8 @@ else
     echo
 fi
 
+#PYWAL
+(cat ~/.cache/wal/sequences &)# ALIASES
 
 alias bt='echo "basco termopili!";echo; shutdown -h now'
 alias bt?='shutdown --show'
