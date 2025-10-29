@@ -23,8 +23,14 @@ if [[ $(tty) == *"pts"* ]]; then
     fastfetch
 else
     echo
-    echo "Start Hyprland with command Hyprland"
+    echo "Welcome back Deshi!"
+    echo
 fi
+
+
+alias bt='echo "basco termopili!";echo; shutdown -h now'
+alias bt?='shutdown --show'
+alias btbt='shutdown -r -h now'
 
 
 
