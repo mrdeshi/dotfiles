@@ -5,6 +5,22 @@
 # (_)_.__/ \__,_|___/_| |_|_|  \___|
 # 
 
+
+#PYWAL
+(cat ~/.cache/wal/sequences &)
+
+# -----------------------------------------------------
+# Fastfetch if in Hyprland
+# -----------------------------------------------------
+if [[ $(tty) == *"pts"* ]]; then
+    fastfetch
+else
+    echo
+    echo "Welcome back deshi!"
+    echo
+fi
+
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 PS1='[\u@\h \W]\$ '
@@ -16,23 +32,12 @@ if [ -f ~/.bashrc_custom ] ;then
     source ~/.bashrc_custom
 fi
 
-# -----------------------------------------------------
-# Fastfetch if in Hyprland
-# -----------------------------------------------------
-if [[ $(tty) == *"pts"* ]]; then
-    fastfetch
-else
-    echo
-    echo "Welcome back Deshi!"
-    echo
-fi
 
-#PYWAL
-(cat ~/.cache/wal/sequences &)# ALIASES
 
-alias bt='echo "basco termopili!";echo; shutdown -h now'
+
+alias bt='echo "basco termopili!";echo;sleep 2; shutdown -h now'
 alias bt?='shutdown --show'
-alias btbt='shutdown -r -h now'
+alias btbt='reboot'
 
 
 
