@@ -40,5 +40,6 @@ alias bt?='shutdown --show'
 alias btbt='reboot'
 
 
-
+#conda bug
+export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 
