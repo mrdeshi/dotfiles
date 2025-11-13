@@ -41,7 +41,7 @@
 /* Very dark background */
 @define-color main-fg #f8f8f2;
 /* Light gray foreground */
-@define-color accent @yellow;
+@define-color accent @blue;
 /* pacman */
 @define-color hover-bg #1f1f28;
 /* Slightly lighter hover background */
