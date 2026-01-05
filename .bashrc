@@ -41,5 +41,9 @@ alias btbt='reboot'
 
 
 #conda bug
-export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
+#export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 
+
+#computer graphics
+export MESA_VK_WSI_PRESENT_MODE=immediate
+export MESA_NO_VSYNC=1
