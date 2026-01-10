@@ -1,8 +1,9 @@
 #!/bin/bash
 
-#regenerate start tree startup page 
-./starttree.py
 
 #pywal 
 wal -i $1
+
+#regenerate start tree startup page 
+archive/inspirational/StartTree/generate.py
 

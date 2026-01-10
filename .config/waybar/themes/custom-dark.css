@@ -32,23 +32,18 @@
 @define-color base #24273a;
 @define-color mantle #1e2030;
 @define-color crust #181926;
+@define-color black #000000;
 
 /* main colors */
 
-@define-color main-br #6272a4;
-/* Desaturated blue border (kept as it complements cyan well) */
-@define-color main-bg #11111b;
-/* Very dark background */
+@define-color main-br @black;
+@define-color main-bg @black;
 @define-color main-fg #f8f8f2;
-/* Light gray foreground */
-@define-color accent @blue;
+@define-color accent @lavender;
 /* pacman */
 @define-color hover-bg #1f1f28;
-/* Slightly lighter hover background */
 @define-color hover-fg #f8f8f2;
-/* Light gray hover foreground */
-@define-color outline #0c0c11;
-/* Even darker outline */
+@define-color outline @black;
 
 /* module colors */
 
