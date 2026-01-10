@@ -1,0 +1,13 @@
+[config]
+
+
+[templates.kitty]
+input_path = '~/.config/matugen/kitty-colors.conf'
+output_path = '~/.config/kitty/colors.conf'
+post_hook = 'pkill -SIGUSR1 kitty'
+
+
+[templates.pywalfox]
+input_path = '~/.config/matugen/pywalfox-colors.json'
+output_path = '~/.cache/wal/colors.json'
+post_hook = 'pywalfox update'
