@@ -11,3 +11,8 @@ post_hook = 'pkill -SIGUSR1 kitty'
 input_path = '~/.config/matugen/pywalfox-colors.json'
 output_path = '~/.cache/wal/colors.json'
 post_hook = 'pywalfox update'
+
+
+[templates.btop]
+input_path = '~/.config/matugen/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
