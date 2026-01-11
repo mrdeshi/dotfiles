@@ -8,6 +8,22 @@
 # (_)_.__/ \__,_|___/_| |_|_|  \___|
 # 
 
+
+#PYWAL
+#(cat ~/.cache/wal/sequences &)
+
+# -----------------------------------------------------
+# Fastfetch if in Hyprland
+# -----------------------------------------------------
+if [[ $(tty) == *"pts"* ]]; then
+    fastfetch
+else
+    echo
+    echo "Welcome back deshi!"
+    echo
+fi
+
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 PS1='[\u@\h \W]\$ '
@@ -19,21 +35,22 @@ if [ -f ~/.bashrc_custom ] ;then
     source ~/.bashrc_custom
 fi
 
-# -----------------------------------------------------
-# Fastfetch if in Hyprland
-# -----------------------------------------------------
-if [[ $(tty) == *"pts"* ]]; then
-    fastfetch
-else
-    echo
-    echo "Start Hyprland with command Hyprland"
-fi
-
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
 
 
 
+alias bt='echo "basco termopili!";echo;sleep 2; shutdown -h now'
+alias bt?='shutdown --show'
+alias btbt='reboot'
 
+
+#conda bug
+#export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
+
+
+#computer graphics
+export MESA_VK_WSI_PRESENT_MODE=immediate
+export MESA_NO_VSYNC=1
+
+
+#miniconda vscontainer
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
