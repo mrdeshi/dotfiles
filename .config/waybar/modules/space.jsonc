@@ -1,5 +1,5 @@
 {
-	"custom/power_menu": {
+	"space": {
 		"format": " ",
 		"on-click": "kitty ~/.config/waybar/scripts/power-menu.sh",
 		"tooltip": false
