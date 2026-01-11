@@ -8,6 +8,7 @@
 		"~/.config/waybar/modules/idle_inhibitor.jsonc",
 		"~/.config/waybar/modules/memory.jsonc",
 		"~/.config/waybar/modules/mpris.jsonc",
+		"~/.config/waybar/modules/space.jsonc",
 		"~/.config/waybar/modules/network.jsonc",
 		"~/.config/waybar/modules/pulseaudio.jsonc",
 		"~/.config/waybar/modules/temperature.jsonc",
