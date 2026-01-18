@@ -7,7 +7,7 @@
 
 
 #PYWAL
-#(cat ~/.cache/wal/sequences &)
+(cat ~/.cache/wal/sequences &)
 
 # -----------------------------------------------------
 # Fastfetch if in Hyprland

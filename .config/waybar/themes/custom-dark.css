@@ -32,31 +32,32 @@
 @define-color base #24273a;
 @define-color mantle #1e2030;
 @define-color crust #181926;
-@define-color black #000000;
-
+@define-color black rgba(0, 0, 0, 1);
+@define-color fulltransparent rgba(0, 0, 0, 0);
+@define-color transparent rgba(0, 0, 0, 0.5);
 /* main colors */
 
 @define-color main-br @black;
-@define-color main-bg @black;
+@define-color main-bg @fulltransparent;
 @define-color main-fg #f8f8f2;
-@define-color accent @lavender;
+@define-color accent rgba(180, 210, 250, 0.8);
 /* pacman */
-@define-color hover-bg #1f1f28;
+@define-color hover-bg @transparent;
 @define-color hover-fg #f8f8f2;
-@define-color outline @black;
+@define-color outline @transparent;
 
 /* module colors */
 
-@define-color workspaces #181825;
-@define-color temperature #181825;
-@define-color memory #1f1f28;
-@define-color cpu #282a36;
-@define-color time #282a36;
-@define-color date #1f1f28;
-@define-color tray #181825;
-@define-color volume #181825;
-@define-color backlight #1f1f28;
-@define-color battery #282a36;
+@define-color workspaces rgba(32, 32, 43, 0.0);
+@define-color temperature rgba(32, 32, 43, 0.006);
+@define-color memory rgba(32, 32, 43, 0.008);
+@define-color cpu rgba(32, 32, 43, 0.001);
+@define-color time rgba(32, 32, 43, 0.001);
+@define-color date rgba(32, 32, 43, 0.008);
+@define-color tray rgba(32, 32, 43, 0.006);
+@define-color volume rgba(32, 32, 43, 0.006);
+@define-color backlight rgba(32, 32, 43, 0.008);
+@define-color battery rgba(32, 32, 43, 0.001);
 
 /* state colors */
 
@@ -68,7 +69,7 @@
 /* Green charging (kept as a distinct alert color) */
 
 /* Ghost Gang */
-@define-color speedy @peach;
-@define-color bashful @peach;
+@define-color speedy rgba(255, 255, 255, 0.8);
+@define-color bashful rgba(255, 255, 255, 0.8);
 /* left ghost */
-@define-color pokey @peach;
+@define-color pokey @sky;
