@@ -2,7 +2,7 @@
 
 
 #pywal 
-#wal -i $1
+wal -i $1
 
 #matugen
 matugen image $1
