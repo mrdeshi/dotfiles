@@ -1,1 +1,1 @@
-adw-gtk-theme firefox obsidan hyprland nano btop atop htop matugen nautilus brightnessctl bluez bluez-utils git obsdian
+adw-gtk-theme firefox obsidan hyprland nano btop atop htop matugen nautilus brightnessctl bluez bluez-utils git pywal

@@ -1,3 +1,6 @@
+#
+# ~/.bashrc
+#
 #    _               _              
 #   | |__   __ _ ___| |__  _ __ ___ 
 #   | '_ \ / _` / __| '_ \| '__/ __|
@@ -45,3 +48,7 @@ alias anaconda='source ~/conda.bashrc'
 #computer graphics
 export MESA_VK_WSI_PRESENT_MODE=immediate
 export MESA_NO_VSYNC=1
+
+
+#miniconda vscontainer
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
