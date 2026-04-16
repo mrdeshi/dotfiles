@@ -36,15 +36,13 @@ if [ -f ~/.bashrc_custom ] ;then
 fi
 
 
-
-
 alias bt='echo "basco termopili!";echo;sleep 2; shutdown -h now'
 alias bt?='shutdown --show'
 alias btbt='reboot'
 
 
-#conda bug
-#export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
+#conda alias
+alias anaconda='source ~/conda.bashrc'
 
 
 #computer graphics
