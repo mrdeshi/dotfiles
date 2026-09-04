@@ -1,0 +1,2 @@
+
+hl.env("XCURSOR_SIZE", "10")

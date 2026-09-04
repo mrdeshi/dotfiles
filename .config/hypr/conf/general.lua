@@ -1,0 +1,34 @@
+-- See https://wiki.hyprland.org/Configuring/Variables/ for more
+
+
+hl.config({
+    input = {
+        -- Keyboard: Add a layout and uncomment kb_options for Win+Space switching shortcut
+        kb_layout = "us",
+        -- kb_options = grp:win_space_toggle
+        numlock_by_default = true,
+        repeat_delay = 250,
+        repeat_rate = 35,
+        touchpad = {
+            natural_scroll = true,
+            disable_while_typing = true,
+            clickfinger_behavior = true,
+            scroll_factor = 0.5,
+        },
+        special_fallthrough = true,
+        follow_mouse = 1,
+    },
+    general = {
+        gaps_in = 0, --5
+        gaps_out = 0, --20
+        border_size = 0, --2
+        col = {
+            active_border = { colors = { "rgba(33ccffee)", "rgba(00ff99ee)" }, angle = 45 },
+            inactive_border = "rgba(595959aa)",
+        },
+        layout = "dwindle",
+        resize_on_border = true,
+        allow_tearing = false,
+    },
+})
+

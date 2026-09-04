@@ -51,4 +51,10 @@ export MESA_NO_VSYNC=1
 
 
 #miniconda vscontainer
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+#[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+#ollama
+#export OLLAMA_HOST=$(tailscale ip -4):11434
+
+# Turso
+#export PATH="$PATH:/home/d3shi/.turso"
