@@ -17,6 +17,10 @@
 --overview
 --noctalia
 
+-- Ollama remoto via tailscale (era "export OLLAMA_HOST=..." non committato nel vecchio .conf).
+-- hl.env vale per tutto ciò che Hyprland avvia: terminali, launcher, app.
+hl.env("OLLAMA_HOST", "100.65.202.42:11434")
+
 hl.on("hyprland.start", function()
     -- these two were exec-once of a bare VAR=value: a no-op. Use hl.env("MESA_NO_VSYNC", "1") if you actually want it.
     -- hl.exec_cmd("MESA_VK_WSI_PRESENT_MODE=immediate")
